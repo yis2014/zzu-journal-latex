@@ -1,0 +1,107 @@
+{
+  "release": "v1.0.0",
+  "verified_date": "2026-10-26",
+  "engine": "XeLaTeX / TeX Live 2026",
+  "scope": "Coursework sample in this release; not journal endorsement or a guarantee for future edits",
+  "default_fonts": {
+    "pages": 3,
+    "page_sizes_bp": [
+      [
+        595.28,
+        841.89
+      ],
+      [
+        595.28,
+        841.89
+      ],
+      [
+        595.28,
+        841.89
+      ]
+    ],
+    "character_bounds_violations": [],
+    "annotation_bounds_violations": [],
+    "footer_font_sizes_bp": [
+      9.0,
+      9.0,
+      9.0
+    ],
+    "measured_text_sizes_bp": {
+      "abstract": 9.0,
+      "author": 14.0,
+      "body": 10.5,
+      "abstract_baseline": 16.3,
+      "body_baseline": 15.7
+    },
+    "bibliography_destinations": [
+      "cite.ctex-doc",
+      "cite.latex-doc"
+    ],
+    "log_check": "No overfull boxes, missing characters, unresolved references or font warnings"
+  },
+  "fallback_fonts": {
+    "pages": 3,
+    "page_sizes_bp": [
+      [
+        595.28,
+        841.89
+      ],
+      [
+        595.28,
+        841.89
+      ],
+      [
+        595.28,
+        841.89
+      ]
+    ],
+    "character_bounds_violations": [],
+    "annotation_bounds_violations": [],
+    "footer_font_sizes_bp": [
+      9.0,
+      9.0,
+      9.0
+    ],
+    "measured_text_sizes_bp": {
+      "abstract": 9.0,
+      "author": 14.0,
+      "body": 10.5,
+      "abstract_baseline": 16.3,
+      "body_baseline": 15.7
+    },
+    "bibliography_destinations": [
+      "cite.ctex-doc",
+      "cite.latex-doc"
+    ],
+    "log_check": "No overfull boxes, missing characters, unresolved references or font warnings"
+  },
+  "preview_pdf_sha256": "f9f896afd4d99d5dc9bb628e8848edcd680720fabbf84ea60d27136684d0aaaa",
+  "visual_review": "All 3 pages of both default-font and fallback-font builds rendered and visually reviewed; no clipping or content overlap observed",
+  "public_source_review": "No official DOC/DOCX, copied article text, private author details, student IDs, machine paths or font binaries included; account/repository links are public",
+  "source_sha256": {
+    ".gitattributes": "55872a71737d2c929c98937d046cfdf2c693c94bf7c2cd482163469a4172845d",
+    ".gitignore": "cd5857344f7db6a555960b432be737d9585b7fa5a746a0da65a5ec3cfa3bd89d",
+    "LICENSE": "77374c2e37357c18a4886bffb01780d3ea8646b1476d3fb5aec75c6afd260a87",
+    "NOTICE.md": "d571c7958be361ef1c5cfa8ff07d2f5dd5f3dc2672b84a87d01203b572cee8d0",
+    "README.md": "e2f9fbe2a42804a83c3de4eb55fa2c66ac929a4ae4769a219105f65be43c7d73",
+    "CONTRIBUTING.md": "b98c0bc215b2b6e4555e0dfe271de6345ceb27e5314e118efba5d13e93f2cd50",
+    "RELEASE_NOTES.md": "57e8ced2812b85b2a4147e81593dcc1ef3f3ba4b4773eff0576c62beed982ff1",
+    "build.ps1": "71736d51a1197e7925d45bd6361437cc5f2c7c125996fb1e1bec762cba9083a0",
+    "latexmkrc": "725f8b16d164dcbf176997910f566c42840355f2d2991b7bca1eda34e6d3188f",
+    "main.tex": "18add0c970a10a3fff141320e525eb17a6a2713571e00fbdffe10dfb4ee1f409",
+    "zzueng.cls": "0eb5ac12ba4db208dcaa90220526fa7155bb64b90baeea3c2bfe9907ab82c7c3",
+    "references.tex": "dff072ebe07e478635eb0c5dcdd03e08233ca50442c4104d5492bf30627d6be8",
+    "sections/example.tex": "5aa425d036d4713761e4877b85cc0e4ec7fe42e793b1e73126bf0923a584ae8a",
+    "images/workflow.tikz": "17fc33a76f6349ebf932fef21ff9cc6740d2588140d665a3ff310c91186c2606",
+    "docs/sources.md": "9df7ced21ab329dc7c8b6e1700cc580a935d93643dcd41eae157a7458c509f44",
+    "docs/github-publishing.md": "1e9584a956c88adb16ba5d0c83e3241cd3f506759123970f8e3d4c951ee29282"
+  },
+  "result": "passed",
+  "repository_url": "https://github.com/yis2014/zzu-journal-latex",
+  "fresh_checkout_build": {
+    "engine": "XeLaTeX / TeX Live 2026",
+    "pages": 3,
+    "layout_matches_visually_reviewed_preview": true,
+    "log_check": "No overfull boxes, missing characters, unresolved references or font warnings"
+  }
+}

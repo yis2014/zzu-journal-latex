@@ -1,0 +1,37 @@
+# LaTeX build products and local outputs
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.xdv
+*.toc
+*.lof
+*.lot
+*.bbl
+*.blg
+*.bcf
+*.run.xml
+*.nav
+*.snm
+*.vrb
+*.dvi
+*.ps
+/main.pdf
+/build/
+/dist/
+
+# Third-party reference files are obtained from official links, not distributed
+/original-template.docx
+/official-sample.doc
+
+# Local editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
+~$*
+*.bak
+*.swp

@@ -1,0 +1,96 @@
+% SPDX-License-Identifier: MIT
+% 本文是为模板新写的教学示例，数据均为人工构造。
+课程论文的排版应帮助读者理解内容。写作时可以先交代问题与目标，再说明方法、
+展示结果并给出结论。LaTeX 的章节、公式及交叉引用命令可以减少手工调整编号的工作，
+相关命令可查阅项目官方文档\cite{latex-doc}；中文字体和标题设置可参考
+CTeX 宏集文档\cite{ctex-doc}。
+
+\section{写作与排版方法}
+\subsection{组织章节}
+将正文写在本文件中，使用标准章节命令组织层次。一级标题用于划分主要部分，
+二级标题用于说明具体问题，三级标题用于必要的进一步展开。可以根据课程要求新增
+章节，也可以拆分成多个文件并在主文件中引用。
+
+\subsubsection{保持内容与格式一致}
+题名、摘要、图表与结论应围绕同一主题。首次出现的术语和变量应解释清楚。
+修改章节或图表后重新编译，文中的编号会自动更新。
+
+\subsection{输入数学公式}
+以比例指标的写法为例：
+\begin{equation}
+  p = \frac{m}{n}\times 100\% .
+  \label{eq:ratio}
+\end{equation}
+式中：\(p\)为比例；\(m\)为满足条件的样本数；\(n\)为样本总数，且\(n>0\)。
+若人工设定\(m=80\)、\(n=100\)，则\(p=80\%\)。这里的数值仅用于展示
+式\eqref{eq:ratio}的排版和引用方式。
+
+正文中的变量使用斜体，单位与说明性下标使用正体，例如\(t_{\mathrm{avg}}\)
+表示平均用时，单位为\(\mathrm{ms}\)。向量和矩阵可用\(\bm{x}\)、\(\bm{A}\)表示。
+行内简单分式宜写为\(m/n\)，避免影响正文行高。
+
+\section{图表与结果表达}
+\subsection{三线表}
+表\ref{tab:demo}展示同一指标的比较方式。数据由人工构造，不代表任何算法的实测结果。
+在正式作业中，应填写真实结果，并解释统计方式、实验条件和误差来源。
+
+\begin{table}[!htbp]
+  \centering\small
+  \zzucaption{人工构造的指标比较数据}{Manually constructed comparison data}
+  \label{tab:demo}
+  \begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}cccc@{}}
+    \toprule
+    设置 & 样本数 & 满足条件数 & 比例/\% \\
+    \midrule
+    A & 100 & 80 & 80.0 \\
+    B & 100 & 85 & 85.0 \\
+    C & 100 & 90 & 90.0 \\
+    \bottomrule
+  \end{tabular*}
+\end{table}
+
+数据列较多时，可以使用通栏表。表\ref{tab:wide}给出结构示例；表题在表体上方，
+中文题后紧接英文题。数值的小数位应与指标精度一致。
+
+\begin{table*}[!t]
+  \centering\small
+  \zzucaption{不同输入规模下的人工演示数据}{Illustrative data for different input sizes}
+  \label{tab:wide}
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ccccccc@{}}
+    \toprule
+    \multirow{2}{*}{输入规模} & \multicolumn{3}{c}{用时/\(\mathrm{ms}\)} &
+      \multicolumn{3}{c}{比例/\%} \\
+    \cmidrule(lr){2-4}\cmidrule(lr){5-7}
+      & 设置A & 设置B & 设置C & 设置A & 设置B & 设置C \\
+    \midrule
+    100 & 12.4 & 10.9 & 9.7 & 80.0 & 85.0 & 90.0 \\
+    200 & 24.8 & 21.8 & 19.4 & 80.0 & 85.0 & 90.0 \\
+    400 & 49.6 & 43.6 & 38.8 & 80.0 & 85.0 & 90.0 \\
+    \bottomrule
+  \end{tabular*}
+\end{table*}
+
+\subsection{矢量流程图}
+图\ref{fig:workflow}由 TikZ 绘制，图形中的文字和连线可以直接修改。
+使用自己的图片时，可将文件放入图片目录，并通过插图命令引用。
+曲线和流程图宜保留矢量源文件，照片则应保证清晰度。
+
+\begin{figure}[!htbp]
+  \centering
+  \input{images/workflow.tikz}
+  \zzucaption{课程作业的编写与复核流程}{Writing and reviewing a course report}
+  \label{fig:workflow}
+\end{figure}
+
+\subsection{讨论结果}
+结果讨论应回答研究问题，说明数据支持什么结论，以及结论的适用条件。
+本例中的表格仅用于展示结构，因此不据其数字作实际性能判断。正式作业中，
+应将图表与相应的分析段落联系起来，并说明异常值或不确定性的处理方式。
+
+\section{结论}
+\begin{enumerate}
+  \item 章节层次、自动编号和交叉引用可以帮助维护课程论文的结构。
+    替换内容后，应检查所有图表和公式引用是否仍指向正确对象。
+  \item 图表应配合正文解释结果。示例中的人工数据和流程应根据实际课程任务替换，
+    编译后再检查换页、图表尺寸与参考文献。
+\end{enumerate}

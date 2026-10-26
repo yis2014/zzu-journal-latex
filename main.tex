@@ -1,0 +1,40 @@
+% !TeX program = xelatex
+% !TeX encoding = UTF-8
+% SPDX-License-Identifier: MIT
+% 修改题名、作者、课程信息，再编辑 sections/example.tex。
+\documentclass[coursework]{zzueng}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,shapes.geometric}
+
+\zzutitle{课程论文排版与实验结果表达示例}
+\zzuauthor{你的姓名}
+\zzuaffiliation{课程：课程名称\quad 学院：学院名称\quad 学号：你的学号}
+\zzuarticleid{} % 需要首页额外显示课程编号时填写，否则留空。
+
+\zzuabstract{课程论文需要将研究问题、分析过程和结论组织为清晰的学术文本。
+本示例提供中文题名、作者信息、双栏正文、数学公式、双语图表题和文末英文信息等常用
+组成部分，说明如何利用交叉引用维护图表与公式编号，并演示三线表和矢量流程图的写法。
+文中的数据由人工构造，用于展示排版结构；参考文献指向公开的排版工具文档。
+使用时应将示例内容替换为自己的课程主题、分析过程和实验结果，并按教师要求调整章节、
+摘要长度及引用格式。}
+\zzukeywords{课程论文；LaTeX；双栏排版；交叉引用；图表表达}
+
+\zzuentitle{An Example of Typesetting a Course Report and Presenting Results}
+\zzuenauthor{YOUR Name}
+\zzuenaffiliation{Course: Your Course Name; School: Your School; Student ID: Your Student ID}
+\zzuenabstract{A course report should organise its question, analysis, and conclusions into
+clear academic prose. This example demonstrates a Chinese title block, a two-column body,
+mathematical equations, bilingual figure and table captions, and English information at the end
+of the report. It also illustrates cross-references, three-line tables, and an editable vector
+flowchart. The numerical data are manually constructed for layout demonstration, and the
+references point to public typesetting documentation. Students should replace the example
+with their own topic, analysis, and results, and follow the requirements of their course.}
+\zzuenkeywords{course report; LaTeX; two-column typesetting; cross-reference; visual presentation}
+
+\begin{document}
+\maketitle
+\input{sections/example}
+\input{references}
+% 不要求英文信息的课程，可删除下一行。
+\makeenglishabstract
+\end{document}

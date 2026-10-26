@@ -1,0 +1,23 @@
+% SPDX-License-Identifier: MIT
+\begin{tikzpicture}[
+  node distance=6mm,
+  font=\fontsize{9bp}{11bp}\selectfont,
+  >=Stealth,
+  line width=.6pt,
+  terminal/.style={draw,rounded corners=3mm,minimum width=22mm,minimum height=7mm},
+  process/.style={draw,align=center,text width=45mm,minimum height=8mm},
+  decision/.style={draw,diamond,aspect=3,align=center,inner sep=1.5pt,text width=30mm}
+]
+  \node[terminal] (start) {开始};
+  \node[process,below=of start] (requirements) {明确课程要求与主题};
+  \node[process,below=of requirements] (write) {编写正文、公式与图表};
+  \node[decision,below=of write] (check) {引用与内容完整？};
+  \node[process,below=of check] (review) {编译并复核页面};
+  \node[terminal,below=of review] (end) {完成};
+  \draw[->] (start)--(requirements);
+  \draw[->] (requirements)--(write);
+  \draw[->] (write)--(check);
+  \draw[->] (check)--node[right]{Y}(review);
+  \draw[->] (review)--(end);
+  \draw[->] (check.east)--++(10mm,0) node[midway,above]{N} |- (write.east);
+\end{tikzpicture}

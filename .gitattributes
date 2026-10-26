@@ -1,0 +1,8 @@
+* text=auto eol=lf
+*.tex text eol=lf
+*.cls text eol=lf
+*.tikz text eol=lf
+*.md text eol=lf
+*.ps1 text eol=lf
+*.pdf binary
+*.png binary
